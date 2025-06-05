@@ -1,0 +1,6 @@
+2025-03-29 22:35:58,209 - INFO - Detected 2 GPUs
+2025-03-29 22:36:00,660 - INFO - GPU 1: Starting classes 500-1000
+2025-03-29 22:36:00,660 - ERROR - GPU 1 failed: models.DiT() got multiple values for keyword argument 'hidden_size'
+2025-03-29 22:36:00,686 - INFO - GPU 0: Starting classes 0-500
+2025-03-29 22:36:00,686 - ERROR - GPU 0 failed: models.DiT() got multiple values for keyword argument 'hidden_size'
+2025-03-29 22:36:01,268 - INFO - Generation completed successfully

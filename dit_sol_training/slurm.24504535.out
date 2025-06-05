@@ -1,0 +1,9 @@
+WHERE I AM FROM: /home/bowenxi/DiT/dit_sol_training
+WHERE AM I NOW: /home/bowenxi/DiT/dit_sol_training
+Loading Python 3 from Anaconda module
+Activating scientific computing Python environment: pytorch
+Running example Python script
+Starting rank=0, seed=0, world_size=4.
+Starting rank=1, seed=1, world_size=4.
+Starting rank=3, seed=3, world_size=4.
+Starting rank=2, seed=2, world_size=4.

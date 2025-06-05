@@ -1,0 +1,481 @@
+
+=====================================================================
+This module is only for creating or activating Python environments:
+$ mamba create -n myenv -c conda-forge python=3 <package_name>
+$ source activate myenv
+
+Only run "pip install" after activating an environment.
+Running pip without activating an environment is known to cause issues.
+
+To list available environments:
+$ mamba info --envs
+
+Other uses are not tested. More info: https://links.asu.edu/solpy
+=====================================================================
+
+  
+W0515 22:11:53.085000 1136467 site-packages/torch/distributed/run.py:793] 
+W0515 22:11:53.085000 1136467 site-packages/torch/distributed/run.py:793] *****************************************
+W0515 22:11:53.085000 1136467 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0515 22:11:53.085000 1136467 site-packages/torch/distributed/run.py:793] *****************************************
+[[34m2025-05-15 22:12:01[0m] Experiment directory created at /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2
+[[34m2025-05-15 22:12:07[0m] DiT Parameters: 458,065,928
+[[34m2025-05-15 22:12:35[0m] Dataset contains 1,281,167 latents from (/data/yyang409/bowen/imagenet_feature/swin_base/patch4_window7_224/image_features_w_label_train.npz)
+[[34m2025-05-15 22:12:35[0m] Training for 1400 epochs...
+[[34m2025-05-15 22:12:35[0m] Beginning epoch 0...
+[[34m2025-05-15 22:15:10[0m] (step=0001000) Train Loss: 0.1717, Train Steps/Sec: 6.44
+[[34m2025-05-15 22:17:43[0m] (step=0002000) Train Loss: 0.1590, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:20:16[0m] (step=0003000) Train Loss: 0.1572, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:22:49[0m] (step=0004000) Train Loss: 0.1572, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:25:21[0m] (step=0005000) Train Loss: 0.1508, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:27:54[0m] (step=0006000) Train Loss: 0.1431, Train Steps/Sec: 6.54
+[[34m2025-05-15 22:30:27[0m] (step=0007000) Train Loss: 0.1370, Train Steps/Sec: 6.54
+[[34m2025-05-15 22:33:00[0m] (step=0008000) Train Loss: 0.1307, Train Steps/Sec: 6.54
+[[34m2025-05-15 22:35:33[0m] (step=0009000) Train Loss: 0.1264, Train Steps/Sec: 6.54
+[[34m2025-05-15 22:38:06[0m] (step=0010000) Train Loss: 0.1273, Train Steps/Sec: 6.54
+[[34m2025-05-15 22:38:07[0m] Beginning epoch 1...
+[[34m2025-05-15 22:40:40[0m] (step=0011000) Train Loss: 0.1246, Train Steps/Sec: 6.50
+[[34m2025-05-15 22:43:12[0m] (step=0012000) Train Loss: 0.1250, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:45:45[0m] (step=0013000) Train Loss: 0.1221, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:48:18[0m] (step=0014000) Train Loss: 0.1236, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:50:50[0m] (step=0015000) Train Loss: 0.1232, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:53:23[0m] (step=0016000) Train Loss: 0.1230, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:55:56[0m] (step=0017000) Train Loss: 0.1225, Train Steps/Sec: 6.55
+[[34m2025-05-15 22:58:29[0m] (step=0018000) Train Loss: 0.1221, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:01:01[0m] (step=0019000) Train Loss: 0.1210, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:03:34[0m] (step=0020000) Train Loss: 0.1214, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:03:37[0m] Beginning epoch 2...
+[[34m2025-05-15 23:06:08[0m] (step=0021000) Train Loss: 0.1210, Train Steps/Sec: 6.49
+[[34m2025-05-15 23:08:41[0m] (step=0022000) Train Loss: 0.1204, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:11:13[0m] (step=0023000) Train Loss: 0.1207, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:13:46[0m] (step=0024000) Train Loss: 0.1176, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:16:18[0m] (step=0025000) Train Loss: 0.1183, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:18:51[0m] (step=0026000) Train Loss: 0.1185, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:21:24[0m] (step=0027000) Train Loss: 0.1182, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:23:56[0m] (step=0028000) Train Loss: 0.1184, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:26:29[0m] (step=0029000) Train Loss: 0.1177, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:29:01[0m] (step=0030000) Train Loss: 0.1180, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:29:06[0m] Beginning epoch 3...
+[[34m2025-05-15 23:31:35[0m] (step=0031000) Train Loss: 0.1166, Train Steps/Sec: 6.49
+[[34m2025-05-15 23:34:08[0m] (step=0032000) Train Loss: 0.1166, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:36:41[0m] (step=0033000) Train Loss: 0.1171, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:39:13[0m] (step=0034000) Train Loss: 0.1165, Train Steps/Sec: 6.55
+[[34m2025-05-15 23:41:46[0m] (step=0035000) Train Loss: 0.1150, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:44:18[0m] (step=0036000) Train Loss: 0.1150, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:46:51[0m] (step=0037000) Train Loss: 0.1143, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:49:23[0m] (step=0038000) Train Loss: 0.1132, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:51:56[0m] (step=0039000) Train Loss: 0.1148, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:54:28[0m] (step=0040000) Train Loss: 0.1134, Train Steps/Sec: 6.56
+[[34m2025-05-15 23:54:34[0m] Beginning epoch 4...
+[[34m2025-05-15 23:57:02[0m] (step=0041000) Train Loss: 0.1134, Train Steps/Sec: 6.50
+[[34m2025-05-15 23:59:35[0m] (step=0042000) Train Loss: 0.1135, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:02:07[0m] (step=0043000) Train Loss: 0.1129, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:04:40[0m] (step=0044000) Train Loss: 0.1130, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:07:12[0m] (step=0045000) Train Loss: 0.1131, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:09:45[0m] (step=0046000) Train Loss: 0.1130, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:12:17[0m] (step=0047000) Train Loss: 0.1113, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:14:50[0m] (step=0048000) Train Loss: 0.1119, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:17:22[0m] (step=0049000) Train Loss: 0.1120, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:19:54[0m] (step=0050000) Train Loss: 0.1112, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:20:09[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0050000.pt
+[[34m2025-05-16 00:20:16[0m] Beginning epoch 5...
+[[34m2025-05-16 00:22:43[0m] (step=0051000) Train Loss: 0.1111, Train Steps/Sec: 5.92
+[[34m2025-05-16 00:25:15[0m] (step=0052000) Train Loss: 0.1102, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:27:48[0m] (step=0053000) Train Loss: 0.1103, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:30:20[0m] (step=0054000) Train Loss: 0.1108, Train Steps/Sec: 6.57
+[[34m2025-05-16 00:32:52[0m] (step=0055000) Train Loss: 0.1111, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:35:25[0m] (step=0056000) Train Loss: 0.1107, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:37:57[0m] (step=0057000) Train Loss: 0.1111, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:40:30[0m] (step=0058000) Train Loss: 0.1110, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:43:03[0m] (step=0059000) Train Loss: 0.1099, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:45:35[0m] (step=0060000) Train Loss: 0.1094, Train Steps/Sec: 6.56
+[[34m2025-05-16 00:45:44[0m] Beginning epoch 6...
+[[34m2025-05-16 00:48:09[0m] (step=0061000) Train Loss: 0.1098, Train Steps/Sec: 6.49
+[[34m2025-05-16 00:50:42[0m] (step=0062000) Train Loss: 0.1091, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:53:15[0m] (step=0063000) Train Loss: 0.1080, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:55:47[0m] (step=0064000) Train Loss: 0.1099, Train Steps/Sec: 6.55
+[[34m2025-05-16 00:58:20[0m] (step=0065000) Train Loss: 0.1096, Train Steps/Sec: 6.55
+[[34m2025-05-16 01:00:53[0m] (step=0066000) Train Loss: 0.1084, Train Steps/Sec: 6.56
+[[34m2025-05-16 01:03:26[0m] (step=0067000) Train Loss: 0.1084, Train Steps/Sec: 6.51
+[[34m2025-05-16 01:06:00[0m] (step=0068000) Train Loss: 0.1077, Train Steps/Sec: 6.51
+[[34m2025-05-16 01:08:33[0m] (step=0069000) Train Loss: 0.1078, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:11:07[0m] (step=0070000) Train Loss: 0.1083, Train Steps/Sec: 6.51
+[[34m2025-05-16 01:11:17[0m] Beginning epoch 7...
+[[34m2025-05-16 01:13:42[0m] (step=0071000) Train Loss: 0.1070, Train Steps/Sec: 6.46
+[[34m2025-05-16 01:16:15[0m] (step=0072000) Train Loss: 0.1069, Train Steps/Sec: 6.54
+[[34m2025-05-16 01:18:48[0m] (step=0073000) Train Loss: 0.1077, Train Steps/Sec: 6.53
+[[34m2025-05-16 01:21:21[0m] (step=0074000) Train Loss: 0.1074, Train Steps/Sec: 6.54
+[[34m2025-05-16 01:23:54[0m] (step=0075000) Train Loss: 0.1063, Train Steps/Sec: 6.54
+[[34m2025-05-16 01:26:27[0m] (step=0076000) Train Loss: 0.1085, Train Steps/Sec: 6.54
+[[34m2025-05-16 01:29:00[0m] (step=0077000) Train Loss: 0.1051, Train Steps/Sec: 6.56
+[[34m2025-05-16 01:31:34[0m] (step=0078000) Train Loss: 0.1070, Train Steps/Sec: 6.50
+[[34m2025-05-16 01:34:07[0m] (step=0079000) Train Loss: 0.1041, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:36:40[0m] (step=0080000) Train Loss: 0.1065, Train Steps/Sec: 6.53
+[[34m2025-05-16 01:36:51[0m] Beginning epoch 8...
+[[34m2025-05-16 01:39:15[0m] (step=0081000) Train Loss: 0.1066, Train Steps/Sec: 6.46
+[[34m2025-05-16 01:41:49[0m] (step=0082000) Train Loss: 0.1056, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:44:22[0m] (step=0083000) Train Loss: 0.1066, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:46:55[0m] (step=0084000) Train Loss: 0.1075, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:49:29[0m] (step=0085000) Train Loss: 0.1049, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:52:02[0m] (step=0086000) Train Loss: 0.1048, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:54:36[0m] (step=0087000) Train Loss: 0.1060, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:57:09[0m] (step=0088000) Train Loss: 0.1055, Train Steps/Sec: 6.52
+[[34m2025-05-16 01:59:42[0m] (step=0089000) Train Loss: 0.1041, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:02:16[0m] (step=0090000) Train Loss: 0.1054, Train Steps/Sec: 6.50
+[[34m2025-05-16 02:02:29[0m] Beginning epoch 9...
+[[34m2025-05-16 02:04:51[0m] (step=0091000) Train Loss: 0.1050, Train Steps/Sec: 6.45
+[[34m2025-05-16 02:07:25[0m] (step=0092000) Train Loss: 0.1046, Train Steps/Sec: 6.51
+[[34m2025-05-16 02:09:59[0m] (step=0093000) Train Loss: 0.1050, Train Steps/Sec: 6.52
+[[34m2025-05-16 02:12:32[0m] (step=0094000) Train Loss: 0.1054, Train Steps/Sec: 6.52
+[[34m2025-05-16 02:15:05[0m] (step=0095000) Train Loss: 0.1040, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:17:38[0m] (step=0096000) Train Loss: 0.1051, Train Steps/Sec: 6.54
+[[34m2025-05-16 02:20:11[0m] (step=0097000) Train Loss: 0.1041, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:22:44[0m] (step=0098000) Train Loss: 0.1049, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:25:17[0m] (step=0099000) Train Loss: 0.1038, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:27:50[0m] (step=0100000) Train Loss: 0.1025, Train Steps/Sec: 6.54
+[[34m2025-05-16 02:27:57[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0100000.pt
+[[34m2025-05-16 02:28:11[0m] Beginning epoch 10...
+[[34m2025-05-16 02:30:32[0m] (step=0101000) Train Loss: 0.1046, Train Steps/Sec: 6.18
+[[34m2025-05-16 02:33:06[0m] (step=0102000) Train Loss: 0.1037, Train Steps/Sec: 6.50
+[[34m2025-05-16 02:35:39[0m] (step=0103000) Train Loss: 0.1036, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:38:13[0m] (step=0104000) Train Loss: 0.1043, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:40:46[0m] (step=0105000) Train Loss: 0.1026, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:43:19[0m] (step=0106000) Train Loss: 0.1033, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:45:52[0m] (step=0107000) Train Loss: 0.1023, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:48:26[0m] (step=0108000) Train Loss: 0.1033, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:50:59[0m] (step=0109000) Train Loss: 0.1020, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:53:32[0m] (step=0110000) Train Loss: 0.1030, Train Steps/Sec: 6.53
+[[34m2025-05-16 02:53:47[0m] Beginning epoch 11...
+[[34m2025-05-16 02:56:07[0m] (step=0111000) Train Loss: 0.1026, Train Steps/Sec: 6.44
+[[34m2025-05-16 02:58:40[0m] (step=0112000) Train Loss: 0.1018, Train Steps/Sec: 6.54
+[[34m2025-05-16 03:01:15[0m] (step=0113000) Train Loss: 0.1015, Train Steps/Sec: 6.48
+[[34m2025-05-16 03:03:49[0m] (step=0114000) Train Loss: 0.1028, Train Steps/Sec: 6.50
+[[34m2025-05-16 03:06:23[0m] (step=0115000) Train Loss: 0.1022, Train Steps/Sec: 6.51
+[[34m2025-05-16 03:08:56[0m] (step=0116000) Train Loss: 0.1029, Train Steps/Sec: 6.50
+[[34m2025-05-16 03:11:30[0m] (step=0117000) Train Loss: 0.1023, Train Steps/Sec: 6.50
+[[34m2025-05-16 03:14:04[0m] (step=0118000) Train Loss: 0.1022, Train Steps/Sec: 6.51
+[[34m2025-05-16 03:16:38[0m] (step=0119000) Train Loss: 0.1017, Train Steps/Sec: 6.50
+[[34m2025-05-16 03:19:12[0m] (step=0120000) Train Loss: 0.1016, Train Steps/Sec: 6.50
+[[34m2025-05-16 03:19:29[0m] Beginning epoch 12...
+[[34m2025-05-16 03:21:46[0m] (step=0121000) Train Loss: 0.1016, Train Steps/Sec: 6.47
+[[34m2025-05-16 03:24:20[0m] (step=0122000) Train Loss: 0.1020, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:26:53[0m] (step=0123000) Train Loss: 0.1013, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:29:26[0m] (step=0124000) Train Loss: 0.1016, Train Steps/Sec: 6.54
+[[34m2025-05-16 03:32:00[0m] (step=0125000) Train Loss: 0.1020, Train Steps/Sec: 6.49
+[[34m2025-05-16 03:34:33[0m] (step=0126000) Train Loss: 0.1016, Train Steps/Sec: 6.52
+[[34m2025-05-16 03:37:06[0m] (step=0127000) Train Loss: 0.1009, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:39:40[0m] (step=0128000) Train Loss: 0.1018, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:42:13[0m] (step=0129000) Train Loss: 0.1008, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:44:46[0m] (step=0130000) Train Loss: 0.1021, Train Steps/Sec: 6.53
+[[34m2025-05-16 03:45:04[0m] Beginning epoch 13...
+[[34m2025-05-16 03:47:21[0m] (step=0131000) Train Loss: 0.1011, Train Steps/Sec: 6.46
+[[34m2025-05-16 03:49:54[0m] (step=0132000) Train Loss: 0.1008, Train Steps/Sec: 6.52
+[[34m2025-05-16 03:52:28[0m] (step=0133000) Train Loss: 0.1017, Train Steps/Sec: 6.52
+[[34m2025-05-16 03:55:01[0m] (step=0134000) Train Loss: 0.1003, Train Steps/Sec: 6.52
+[[34m2025-05-16 03:57:34[0m] (step=0135000) Train Loss: 0.1008, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:00:08[0m] (step=0136000) Train Loss: 0.0997, Train Steps/Sec: 6.53
+[[34m2025-05-16 04:02:42[0m] (step=0137000) Train Loss: 0.1011, Train Steps/Sec: 6.50
+[[34m2025-05-16 04:05:15[0m] (step=0138000) Train Loss: 0.1008, Train Steps/Sec: 6.50
+[[34m2025-05-16 04:07:49[0m] (step=0139000) Train Loss: 0.1000, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:10:23[0m] (step=0140000) Train Loss: 0.0998, Train Steps/Sec: 6.50
+[[34m2025-05-16 04:10:42[0m] Beginning epoch 14...
+[[34m2025-05-16 04:12:58[0m] (step=0141000) Train Loss: 0.0990, Train Steps/Sec: 6.46
+[[34m2025-05-16 04:15:31[0m] (step=0142000) Train Loss: 0.0990, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:18:05[0m] (step=0143000) Train Loss: 0.1009, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:20:38[0m] (step=0144000) Train Loss: 0.0999, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:23:11[0m] (step=0145000) Train Loss: 0.1012, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:25:45[0m] (step=0146000) Train Loss: 0.0985, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:28:18[0m] (step=0147000) Train Loss: 0.1001, Train Steps/Sec: 6.54
+[[34m2025-05-16 04:30:52[0m] (step=0148000) Train Loss: 0.0997, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:33:25[0m] (step=0149000) Train Loss: 0.0995, Train Steps/Sec: 6.50
+[[34m2025-05-16 04:35:59[0m] (step=0150000) Train Loss: 0.1004, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:36:19[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0150000.pt
+[[34m2025-05-16 04:36:40[0m] Beginning epoch 15...
+[[34m2025-05-16 04:38:54[0m] (step=0151000) Train Loss: 0.0999, Train Steps/Sec: 5.71
+[[34m2025-05-16 04:41:28[0m] (step=0152000) Train Loss: 0.0998, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:44:01[0m] (step=0153000) Train Loss: 0.0997, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:46:35[0m] (step=0154000) Train Loss: 0.0988, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:49:08[0m] (step=0155000) Train Loss: 0.0980, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:51:42[0m] (step=0156000) Train Loss: 0.0990, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:54:16[0m] (step=0157000) Train Loss: 0.0986, Train Steps/Sec: 6.52
+[[34m2025-05-16 04:56:49[0m] (step=0158000) Train Loss: 0.0995, Train Steps/Sec: 6.51
+[[34m2025-05-16 04:59:22[0m] (step=0159000) Train Loss: 0.1000, Train Steps/Sec: 6.54
+[[34m2025-05-16 05:01:57[0m] (step=0160000) Train Loss: 0.0992, Train Steps/Sec: 6.47
+[[34m2025-05-16 05:02:19[0m] Beginning epoch 16...
+[[34m2025-05-16 05:04:32[0m] (step=0161000) Train Loss: 0.0996, Train Steps/Sec: 6.45
+[[34m2025-05-16 05:07:05[0m] (step=0162000) Train Loss: 0.0979, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:09:38[0m] (step=0163000) Train Loss: 0.0987, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:12:12[0m] (step=0164000) Train Loss: 0.0992, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:14:45[0m] (step=0165000) Train Loss: 0.0986, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:17:19[0m] (step=0166000) Train Loss: 0.0984, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:19:52[0m] (step=0167000) Train Loss: 0.0980, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:22:26[0m] (step=0168000) Train Loss: 0.0999, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:24:59[0m] (step=0169000) Train Loss: 0.0985, Train Steps/Sec: 6.52
+[[34m2025-05-16 05:27:32[0m] (step=0170000) Train Loss: 0.0982, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:27:56[0m] Beginning epoch 17...
+[[34m2025-05-16 05:30:07[0m] (step=0171000) Train Loss: 0.0985, Train Steps/Sec: 6.46
+[[34m2025-05-16 05:32:41[0m] (step=0172000) Train Loss: 0.0975, Train Steps/Sec: 6.50
+[[34m2025-05-16 05:35:14[0m] (step=0173000) Train Loss: 0.0974, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:37:47[0m] (step=0174000) Train Loss: 0.0982, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:40:21[0m] (step=0175000) Train Loss: 0.0979, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:42:54[0m] (step=0176000) Train Loss: 0.0988, Train Steps/Sec: 6.54
+[[34m2025-05-16 05:45:27[0m] (step=0177000) Train Loss: 0.0982, Train Steps/Sec: 6.54
+[[34m2025-05-16 05:48:00[0m] (step=0178000) Train Loss: 0.0982, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:50:33[0m] (step=0179000) Train Loss: 0.0979, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:53:06[0m] (step=0180000) Train Loss: 0.0977, Train Steps/Sec: 6.53
+[[34m2025-05-16 05:53:31[0m] Beginning epoch 18...
+[[34m2025-05-16 05:55:41[0m] (step=0181000) Train Loss: 0.0978, Train Steps/Sec: 6.47
+[[34m2025-05-16 05:58:13[0m] (step=0182000) Train Loss: 0.0976, Train Steps/Sec: 6.56
+[[34m2025-05-16 06:00:47[0m] (step=0183000) Train Loss: 0.0966, Train Steps/Sec: 6.50
+[[34m2025-05-16 06:03:21[0m] (step=0184000) Train Loss: 0.0974, Train Steps/Sec: 6.49
+[[34m2025-05-16 06:05:55[0m] (step=0185000) Train Loss: 0.0979, Train Steps/Sec: 6.51
+[[34m2025-05-16 06:08:29[0m] (step=0186000) Train Loss: 0.0972, Train Steps/Sec: 6.51
+[[34m2025-05-16 06:11:02[0m] (step=0187000) Train Loss: 0.0976, Train Steps/Sec: 6.51
+[[34m2025-05-16 06:13:36[0m] (step=0188000) Train Loss: 0.0974, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:16:09[0m] (step=0189000) Train Loss: 0.0971, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:18:43[0m] (step=0190000) Train Loss: 0.0984, Train Steps/Sec: 6.51
+[[34m2025-05-16 06:19:09[0m] Beginning epoch 19...
+[[34m2025-05-16 06:21:18[0m] (step=0191000) Train Loss: 0.0984, Train Steps/Sec: 6.44
+[[34m2025-05-16 06:23:52[0m] (step=0192000) Train Loss: 0.0963, Train Steps/Sec: 6.50
+[[34m2025-05-16 06:26:26[0m] (step=0193000) Train Loss: 0.0972, Train Steps/Sec: 6.50
+[[34m2025-05-16 06:28:59[0m] (step=0194000) Train Loss: 0.0979, Train Steps/Sec: 6.53
+[[34m2025-05-16 06:31:33[0m] (step=0195000) Train Loss: 0.0967, Train Steps/Sec: 6.48
+[[34m2025-05-16 06:34:07[0m] (step=0196000) Train Loss: 0.0965, Train Steps/Sec: 6.49
+[[34m2025-05-16 06:36:41[0m] (step=0197000) Train Loss: 0.0966, Train Steps/Sec: 6.51
+[[34m2025-05-16 06:39:15[0m] (step=0198000) Train Loss: 0.0974, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:41:48[0m] (step=0199000) Train Loss: 0.0973, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:44:21[0m] (step=0200000) Train Loss: 0.0978, Train Steps/Sec: 6.53
+[[34m2025-05-16 06:44:26[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0200000.pt
+[[34m2025-05-16 06:44:54[0m] Beginning epoch 20...
+[[34m2025-05-16 06:47:01[0m] (step=0201000) Train Loss: 0.0972, Train Steps/Sec: 6.26
+[[34m2025-05-16 06:49:35[0m] (step=0202000) Train Loss: 0.0966, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:52:08[0m] (step=0203000) Train Loss: 0.0960, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:54:41[0m] (step=0204000) Train Loss: 0.0962, Train Steps/Sec: 6.52
+[[34m2025-05-16 06:57:15[0m] (step=0205000) Train Loss: 0.0963, Train Steps/Sec: 6.53
+[[34m2025-05-16 06:59:48[0m] (step=0206000) Train Loss: 0.0968, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:02:22[0m] (step=0207000) Train Loss: 0.0966, Train Steps/Sec: 6.48
+[[34m2025-05-16 07:04:56[0m] (step=0208000) Train Loss: 0.0968, Train Steps/Sec: 6.52
+[[34m2025-05-16 07:07:29[0m] (step=0209000) Train Loss: 0.0970, Train Steps/Sec: 6.52
+[[34m2025-05-16 07:10:03[0m] (step=0210000) Train Loss: 0.0968, Train Steps/Sec: 6.52
+[[34m2025-05-16 07:10:32[0m] Beginning epoch 21...
+[[34m2025-05-16 07:12:38[0m] (step=0211000) Train Loss: 0.0969, Train Steps/Sec: 6.45
+[[34m2025-05-16 07:15:11[0m] (step=0212000) Train Loss: 0.0964, Train Steps/Sec: 6.52
+[[34m2025-05-16 07:17:45[0m] (step=0213000) Train Loss: 0.0961, Train Steps/Sec: 6.51
+[[34m2025-05-16 07:20:19[0m] (step=0214000) Train Loss: 0.0957, Train Steps/Sec: 6.51
+[[34m2025-05-16 07:22:52[0m] (step=0215000) Train Loss: 0.0970, Train Steps/Sec: 6.51
+[[34m2025-05-16 07:25:26[0m] (step=0216000) Train Loss: 0.0968, Train Steps/Sec: 6.51
+[[34m2025-05-16 07:27:59[0m] (step=0217000) Train Loss: 0.0958, Train Steps/Sec: 6.54
+[[34m2025-05-16 07:30:33[0m] (step=0218000) Train Loss: 0.0963, Train Steps/Sec: 6.50
+[[34m2025-05-16 07:33:07[0m] (step=0219000) Train Loss: 0.0962, Train Steps/Sec: 6.50
+[[34m2025-05-16 07:35:40[0m] (step=0220000) Train Loss: 0.0957, Train Steps/Sec: 6.51
+[[34m2025-05-16 07:36:11[0m] Beginning epoch 22...
+[[34m2025-05-16 07:38:15[0m] (step=0221000) Train Loss: 0.0949, Train Steps/Sec: 6.47
+[[34m2025-05-16 07:40:48[0m] (step=0222000) Train Loss: 0.0953, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:43:21[0m] (step=0223000) Train Loss: 0.0949, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:45:55[0m] (step=0224000) Train Loss: 0.0963, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:48:28[0m] (step=0225000) Train Loss: 0.0960, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:51:01[0m] (step=0226000) Train Loss: 0.0943, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:53:35[0m] (step=0227000) Train Loss: 0.0963, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:56:08[0m] (step=0228000) Train Loss: 0.0962, Train Steps/Sec: 6.53
+[[34m2025-05-16 07:58:41[0m] (step=0229000) Train Loss: 0.0954, Train Steps/Sec: 6.55
+[[34m2025-05-16 08:01:15[0m] (step=0230000) Train Loss: 0.0952, Train Steps/Sec: 6.50
+[[34m2025-05-16 08:01:47[0m] Beginning epoch 23...
+[[34m2025-05-16 08:03:50[0m] (step=0231000) Train Loss: 0.0948, Train Steps/Sec: 6.45
+[[34m2025-05-16 08:06:23[0m] (step=0232000) Train Loss: 0.0957, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:08:57[0m] (step=0233000) Train Loss: 0.0958, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:11:30[0m] (step=0234000) Train Loss: 0.0960, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:14:04[0m] (step=0235000) Train Loss: 0.0949, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:16:37[0m] (step=0236000) Train Loss: 0.0961, Train Steps/Sec: 6.53
+[[34m2025-05-16 08:19:10[0m] (step=0237000) Train Loss: 0.0959, Train Steps/Sec: 6.54
+[[34m2025-05-16 08:21:44[0m] (step=0238000) Train Loss: 0.0939, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:24:17[0m] (step=0239000) Train Loss: 0.0959, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:26:51[0m] (step=0240000) Train Loss: 0.0956, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:27:24[0m] Beginning epoch 24...
+[[34m2025-05-16 08:29:25[0m] (step=0241000) Train Loss: 0.0953, Train Steps/Sec: 6.47
+[[34m2025-05-16 08:32:00[0m] (step=0242000) Train Loss: 0.0960, Train Steps/Sec: 6.48
+[[34m2025-05-16 08:34:33[0m] (step=0243000) Train Loss: 0.0953, Train Steps/Sec: 6.50
+[[34m2025-05-16 08:37:07[0m] (step=0244000) Train Loss: 0.0955, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:39:41[0m] (step=0245000) Train Loss: 0.0937, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:42:14[0m] (step=0246000) Train Loss: 0.0953, Train Steps/Sec: 6.51
+[[34m2025-05-16 08:44:48[0m] (step=0247000) Train Loss: 0.0948, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:47:21[0m] (step=0248000) Train Loss: 0.0954, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:49:55[0m] (step=0249000) Train Loss: 0.0943, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:52:28[0m] (step=0250000) Train Loss: 0.0944, Train Steps/Sec: 6.52
+[[34m2025-05-16 08:52:34[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0250000.pt
+[[34m2025-05-16 08:53:09[0m] Beginning epoch 25...
+[[34m2025-05-16 08:55:09[0m] (step=0251000) Train Loss: 0.0949, Train Steps/Sec: 6.23
+[[34m2025-05-16 08:57:42[0m] (step=0252000) Train Loss: 0.0946, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:00:15[0m] (step=0253000) Train Loss: 0.0942, Train Steps/Sec: 6.54
+[[34m2025-05-16 09:02:49[0m] (step=0254000) Train Loss: 0.0953, Train Steps/Sec: 6.49
+[[34m2025-05-16 09:05:23[0m] (step=0255000) Train Loss: 0.0934, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:07:56[0m] (step=0256000) Train Loss: 0.0944, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:10:30[0m] (step=0257000) Train Loss: 0.0950, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:13:03[0m] (step=0258000) Train Loss: 0.0945, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:15:36[0m] (step=0259000) Train Loss: 0.0940, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:18:10[0m] (step=0260000) Train Loss: 0.0941, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:18:46[0m] Beginning epoch 26...
+[[34m2025-05-16 09:20:44[0m] (step=0261000) Train Loss: 0.0954, Train Steps/Sec: 6.46
+[[34m2025-05-16 09:23:18[0m] (step=0262000) Train Loss: 0.0954, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:25:51[0m] (step=0263000) Train Loss: 0.0939, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:28:25[0m] (step=0264000) Train Loss: 0.0952, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:30:58[0m] (step=0265000) Train Loss: 0.0951, Train Steps/Sec: 6.53
+[[34m2025-05-16 09:33:32[0m] (step=0266000) Train Loss: 0.0957, Train Steps/Sec: 6.49
+[[34m2025-05-16 09:36:06[0m] (step=0267000) Train Loss: 0.0935, Train Steps/Sec: 6.50
+[[34m2025-05-16 09:38:40[0m] (step=0268000) Train Loss: 0.0945, Train Steps/Sec: 6.50
+[[34m2025-05-16 09:41:14[0m] (step=0269000) Train Loss: 0.0933, Train Steps/Sec: 6.50
+[[34m2025-05-16 09:43:48[0m] (step=0270000) Train Loss: 0.0943, Train Steps/Sec: 6.50
+[[34m2025-05-16 09:44:26[0m] Beginning epoch 27...
+[[34m2025-05-16 09:46:23[0m] (step=0271000) Train Loss: 0.0944, Train Steps/Sec: 6.45
+[[34m2025-05-16 09:48:56[0m] (step=0272000) Train Loss: 0.0946, Train Steps/Sec: 6.52
+[[34m2025-05-16 09:51:30[0m] (step=0273000) Train Loss: 0.0940, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:54:04[0m] (step=0274000) Train Loss: 0.0948, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:56:37[0m] (step=0275000) Train Loss: 0.0933, Train Steps/Sec: 6.51
+[[34m2025-05-16 09:59:11[0m] (step=0276000) Train Loss: 0.0941, Train Steps/Sec: 6.51
+[[34m2025-05-16 10:01:44[0m] (step=0277000) Train Loss: 0.0939, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:04:18[0m] (step=0278000) Train Loss: 0.0945, Train Steps/Sec: 6.50
+[[34m2025-05-16 10:06:52[0m] (step=0279000) Train Loss: 0.0933, Train Steps/Sec: 6.52
+[[34m2025-05-16 10:09:25[0m] (step=0280000) Train Loss: 0.0946, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:10:04[0m] Beginning epoch 28...
+[[34m2025-05-16 10:12:00[0m] (step=0281000) Train Loss: 0.0942, Train Steps/Sec: 6.47
+[[34m2025-05-16 10:14:33[0m] (step=0282000) Train Loss: 0.0933, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:17:06[0m] (step=0283000) Train Loss: 0.0938, Train Steps/Sec: 6.54
+[[34m2025-05-16 10:19:39[0m] (step=0284000) Train Loss: 0.0939, Train Steps/Sec: 6.54
+[[34m2025-05-16 10:22:12[0m] (step=0285000) Train Loss: 0.0938, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:24:45[0m] (step=0286000) Train Loss: 0.0930, Train Steps/Sec: 6.54
+[[34m2025-05-16 10:27:17[0m] (step=0287000) Train Loss: 0.0934, Train Steps/Sec: 6.54
+[[34m2025-05-16 10:29:50[0m] (step=0288000) Train Loss: 0.0940, Train Steps/Sec: 6.55
+[[34m2025-05-16 10:32:23[0m] (step=0289000) Train Loss: 0.0931, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:34:57[0m] (step=0290000) Train Loss: 0.0942, Train Steps/Sec: 6.51
+[[34m2025-05-16 10:35:38[0m] Beginning epoch 29...
+[[34m2025-05-16 10:37:32[0m] (step=0291000) Train Loss: 0.0946, Train Steps/Sec: 6.46
+[[34m2025-05-16 10:40:05[0m] (step=0292000) Train Loss: 0.0920, Train Steps/Sec: 6.52
+[[34m2025-05-16 10:42:39[0m] (step=0293000) Train Loss: 0.0928, Train Steps/Sec: 6.52
+[[34m2025-05-16 10:45:12[0m] (step=0294000) Train Loss: 0.0936, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:47:45[0m] (step=0295000) Train Loss: 0.0932, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:50:19[0m] (step=0296000) Train Loss: 0.0929, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:52:52[0m] (step=0297000) Train Loss: 0.0928, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:55:25[0m] (step=0298000) Train Loss: 0.0939, Train Steps/Sec: 6.53
+[[34m2025-05-16 10:57:58[0m] (step=0299000) Train Loss: 0.0926, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:00:31[0m] (step=0300000) Train Loss: 0.0937, Train Steps/Sec: 6.54
+[[34m2025-05-16 11:00:41[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0300000.pt
+[[34m2025-05-16 11:01:23[0m] Beginning epoch 30...
+[[34m2025-05-16 11:03:16[0m] (step=0301000) Train Loss: 0.0934, Train Steps/Sec: 6.06
+[[34m2025-05-16 11:05:50[0m] (step=0302000) Train Loss: 0.0928, Train Steps/Sec: 6.51
+[[34m2025-05-16 11:08:23[0m] (step=0303000) Train Loss: 0.0921, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:10:57[0m] (step=0304000) Train Loss: 0.0939, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:13:30[0m] (step=0305000) Train Loss: 0.0929, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:16:03[0m] (step=0306000) Train Loss: 0.0937, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:18:37[0m] (step=0307000) Train Loss: 0.0926, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:21:10[0m] (step=0308000) Train Loss: 0.0950, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:23:43[0m] (step=0309000) Train Loss: 0.0931, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:26:16[0m] (step=0310000) Train Loss: 0.0935, Train Steps/Sec: 6.53
+[[34m2025-05-16 11:26:59[0m] Beginning epoch 31...
+[[34m2025-05-16 11:28:51[0m] (step=0311000) Train Loss: 0.0925, Train Steps/Sec: 6.47
+[[34m2025-05-16 11:31:24[0m] (step=0312000) Train Loss: 0.0920, Train Steps/Sec: 6.54
+[[34m2025-05-16 11:33:57[0m] (step=0313000) Train Loss: 0.0932, Train Steps/Sec: 6.51
+[[34m2025-05-16 11:36:31[0m] (step=0314000) Train Loss: 0.0925, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:39:04[0m] (step=0315000) Train Loss: 0.0937, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:41:38[0m] (step=0316000) Train Loss: 0.0932, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:44:11[0m] (step=0317000) Train Loss: 0.0921, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:46:45[0m] (step=0318000) Train Loss: 0.0932, Train Steps/Sec: 6.50
+[[34m2025-05-16 11:49:19[0m] (step=0319000) Train Loss: 0.0927, Train Steps/Sec: 6.50
+[[34m2025-05-16 11:51:53[0m] (step=0320000) Train Loss: 0.0937, Train Steps/Sec: 6.50
+[[34m2025-05-16 11:52:37[0m] Beginning epoch 32...
+[[34m2025-05-16 11:54:28[0m] (step=0321000) Train Loss: 0.0943, Train Steps/Sec: 6.45
+[[34m2025-05-16 11:57:01[0m] (step=0322000) Train Loss: 0.0927, Train Steps/Sec: 6.52
+[[34m2025-05-16 11:59:35[0m] (step=0323000) Train Loss: 0.0923, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:02:08[0m] (step=0324000) Train Loss: 0.0922, Train Steps/Sec: 6.54
+[[34m2025-05-16 12:04:42[0m] (step=0325000) Train Loss: 0.0919, Train Steps/Sec: 6.50
+[[34m2025-05-16 12:07:15[0m] (step=0326000) Train Loss: 0.0933, Train Steps/Sec: 6.51
+[[34m2025-05-16 12:09:48[0m] (step=0327000) Train Loss: 0.0934, Train Steps/Sec: 6.53
+[[34m2025-05-16 12:12:22[0m] (step=0328000) Train Loss: 0.0933, Train Steps/Sec: 6.53
+[[34m2025-05-16 12:14:55[0m] (step=0329000) Train Loss: 0.0937, Train Steps/Sec: 6.53
+[[34m2025-05-16 12:17:28[0m] (step=0330000) Train Loss: 0.0935, Train Steps/Sec: 6.54
+[[34m2025-05-16 12:18:14[0m] Beginning epoch 33...
+[[34m2025-05-16 12:20:02[0m] (step=0331000) Train Loss: 0.0936, Train Steps/Sec: 6.47
+[[34m2025-05-16 12:22:36[0m] (step=0332000) Train Loss: 0.0930, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:25:10[0m] (step=0333000) Train Loss: 0.0929, Train Steps/Sec: 6.50
+[[34m2025-05-16 12:27:43[0m] (step=0334000) Train Loss: 0.0920, Train Steps/Sec: 6.51
+[[34m2025-05-16 12:30:17[0m] (step=0335000) Train Loss: 0.0932, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:32:50[0m] (step=0336000) Train Loss: 0.0930, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:35:25[0m] (step=0337000) Train Loss: 0.0925, Train Steps/Sec: 6.48
+[[34m2025-05-16 12:37:59[0m] (step=0338000) Train Loss: 0.0917, Train Steps/Sec: 6.49
+[[34m2025-05-16 12:40:33[0m] (step=0339000) Train Loss: 0.0926, Train Steps/Sec: 6.51
+[[34m2025-05-16 12:43:06[0m] (step=0340000) Train Loss: 0.0920, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:43:53[0m] Beginning epoch 34...
+[[34m2025-05-16 12:45:41[0m] (step=0341000) Train Loss: 0.0916, Train Steps/Sec: 6.47
+[[34m2025-05-16 12:48:14[0m] (step=0342000) Train Loss: 0.0930, Train Steps/Sec: 6.51
+[[34m2025-05-16 12:50:48[0m] (step=0343000) Train Loss: 0.0920, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:53:21[0m] (step=0344000) Train Loss: 0.0923, Train Steps/Sec: 6.52
+[[34m2025-05-16 12:55:55[0m] (step=0345000) Train Loss: 0.0932, Train Steps/Sec: 6.51
+[[34m2025-05-16 12:58:28[0m] (step=0346000) Train Loss: 0.0925, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:01:02[0m] (step=0347000) Train Loss: 0.0922, Train Steps/Sec: 6.52
+[[34m2025-05-16 13:03:35[0m] (step=0348000) Train Loss: 0.0916, Train Steps/Sec: 6.54
+[[34m2025-05-16 13:06:09[0m] (step=0349000) Train Loss: 0.0915, Train Steps/Sec: 6.48
+[[34m2025-05-16 13:08:42[0m] (step=0350000) Train Loss: 0.0924, Train Steps/Sec: 6.52
+[[34m2025-05-16 13:09:00[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0350000.pt
+[[34m2025-05-16 13:09:49[0m] Beginning epoch 35...
+[[34m2025-05-16 13:11:35[0m] (step=0351000) Train Loss: 0.0934, Train Steps/Sec: 5.79
+[[34m2025-05-16 13:14:09[0m] (step=0352000) Train Loss: 0.0934, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:16:42[0m] (step=0353000) Train Loss: 0.0917, Train Steps/Sec: 6.52
+[[34m2025-05-16 13:19:16[0m] (step=0354000) Train Loss: 0.0918, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:21:50[0m] (step=0355000) Train Loss: 0.0925, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:24:23[0m] (step=0356000) Train Loss: 0.0914, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:26:57[0m] (step=0357000) Train Loss: 0.0925, Train Steps/Sec: 6.50
+[[34m2025-05-16 13:29:31[0m] (step=0358000) Train Loss: 0.0927, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:32:04[0m] (step=0359000) Train Loss: 0.0924, Train Steps/Sec: 6.54
+[[34m2025-05-16 13:34:38[0m] (step=0360000) Train Loss: 0.0926, Train Steps/Sec: 6.50
+[[34m2025-05-16 13:35:28[0m] Beginning epoch 36...
+[[34m2025-05-16 13:37:13[0m] (step=0361000) Train Loss: 0.0929, Train Steps/Sec: 6.43
+[[34m2025-05-16 13:39:47[0m] (step=0362000) Train Loss: 0.0919, Train Steps/Sec: 6.50
+[[34m2025-05-16 13:42:21[0m] (step=0363000) Train Loss: 0.0922, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:44:54[0m] (step=0364000) Train Loss: 0.0916, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:47:28[0m] (step=0365000) Train Loss: 0.0921, Train Steps/Sec: 6.52
+[[34m2025-05-16 13:50:01[0m] (step=0366000) Train Loss: 0.0916, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:52:35[0m] (step=0367000) Train Loss: 0.0923, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:55:09[0m] (step=0368000) Train Loss: 0.0912, Train Steps/Sec: 6.51
+[[34m2025-05-16 13:57:42[0m] (step=0369000) Train Loss: 0.0920, Train Steps/Sec: 6.51
+[[34m2025-05-16 14:00:16[0m] (step=0370000) Train Loss: 0.0921, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:01:07[0m] Beginning epoch 37...
+[[34m2025-05-16 14:02:50[0m] (step=0371000) Train Loss: 0.0913, Train Steps/Sec: 6.49
+[[34m2025-05-16 14:05:24[0m] (step=0372000) Train Loss: 0.0916, Train Steps/Sec: 6.48
+[[34m2025-05-16 14:07:58[0m] (step=0373000) Train Loss: 0.0924, Train Steps/Sec: 6.49
+[[34m2025-05-16 14:10:32[0m] (step=0374000) Train Loss: 0.0917, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:13:05[0m] (step=0375000) Train Loss: 0.0913, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:15:39[0m] (step=0376000) Train Loss: 0.0918, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:18:12[0m] (step=0377000) Train Loss: 0.0920, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:20:46[0m] (step=0378000) Train Loss: 0.0923, Train Steps/Sec: 6.51
+[[34m2025-05-16 14:23:19[0m] (step=0379000) Train Loss: 0.0923, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:25:52[0m] (step=0380000) Train Loss: 0.0913, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:26:45[0m] Beginning epoch 38...
+[[34m2025-05-16 14:28:27[0m] (step=0381000) Train Loss: 0.0913, Train Steps/Sec: 6.47
+[[34m2025-05-16 14:31:00[0m] (step=0382000) Train Loss: 0.0904, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:33:33[0m] (step=0383000) Train Loss: 0.0917, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:36:07[0m] (step=0384000) Train Loss: 0.0922, Train Steps/Sec: 6.51
+[[34m2025-05-16 14:38:41[0m] (step=0385000) Train Loss: 0.0911, Train Steps/Sec: 6.50
+[[34m2025-05-16 14:41:14[0m] (step=0386000) Train Loss: 0.0933, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:43:47[0m] (step=0387000) Train Loss: 0.0925, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:46:20[0m] (step=0388000) Train Loss: 0.0922, Train Steps/Sec: 6.54
+[[34m2025-05-16 14:48:53[0m] (step=0389000) Train Loss: 0.0914, Train Steps/Sec: 6.53
+[[34m2025-05-16 14:51:26[0m] (step=0390000) Train Loss: 0.0908, Train Steps/Sec: 6.54
+[[34m2025-05-16 14:52:20[0m] Beginning epoch 39...
+[[34m2025-05-16 14:54:01[0m] (step=0391000) Train Loss: 0.0914, Train Steps/Sec: 6.47
+[[34m2025-05-16 14:56:34[0m] (step=0392000) Train Loss: 0.0902, Train Steps/Sec: 6.52
+[[34m2025-05-16 14:59:08[0m] (step=0393000) Train Loss: 0.0919, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:01:41[0m] (step=0394000) Train Loss: 0.0922, Train Steps/Sec: 6.53
+[[34m2025-05-16 15:04:14[0m] (step=0395000) Train Loss: 0.0907, Train Steps/Sec: 6.55
+[[34m2025-05-16 15:06:47[0m] (step=0396000) Train Loss: 0.0923, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:09:20[0m] (step=0397000) Train Loss: 0.0918, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:11:54[0m] (step=0398000) Train Loss: 0.0921, Train Steps/Sec: 6.50
+[[34m2025-05-16 15:14:28[0m] (step=0399000) Train Loss: 0.0925, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:17:01[0m] (step=0400000) Train Loss: 0.0905, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:17:13[0m] Saved checkpoint to /scratch/bowenxi/dit_result/DiT-L_2_0513_4h100/000-DiT-L-2/checkpoints/0400000.pt
+[[34m2025-05-16 15:18:09[0m] Beginning epoch 40...
+[[34m2025-05-16 15:19:48[0m] (step=0401000) Train Loss: 0.0917, Train Steps/Sec: 5.99
+[[34m2025-05-16 15:22:22[0m] (step=0402000) Train Loss: 0.0913, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:24:55[0m] (step=0403000) Train Loss: 0.0921, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:27:29[0m] (step=0404000) Train Loss: 0.0914, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:30:02[0m] (step=0405000) Train Loss: 0.0913, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:32:36[0m] (step=0406000) Train Loss: 0.0912, Train Steps/Sec: 6.52
+[[34m2025-05-16 15:35:09[0m] (step=0407000) Train Loss: 0.0918, Train Steps/Sec: 6.53
+[[34m2025-05-16 15:37:42[0m] (step=0408000) Train Loss: 0.0905, Train Steps/Sec: 6.52
